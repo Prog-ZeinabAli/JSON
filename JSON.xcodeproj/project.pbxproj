@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1979FA67241132190092FC8B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979FA66241132190092FC8B /* Category.swift */; };
+		1979FA6A241133760092FC8B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979FA69241133760092FC8B /* DataService.swift */; };
 		8FCA498E3CB8328F6576E097 /* Pods_JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55301026126434458E0B84B8 /* Pods_JSON.framework */; };
 		93DA92B2422B0421141BC222 /* Pods_JSONTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35C95F79586AB3853A2E2DC /* Pods_JSONTests.framework */; };
 		E3587A4A240EDB5100456D99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3587A49240EDB5100456D99 /* Default-568h@2x.png */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1979FA66241132190092FC8B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1979FA69241133760092FC8B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1FF4FE73B08E46735B5DA14C /* Pods-JSONTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONTests.debug.xcconfig"; path = "Target Support Files/Pods-JSONTests/Pods-JSONTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A05D80B6726BB9B61986A5F /* Pods-JSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSON.release.xcconfig"; path = "Target Support Files/Pods-JSON/Pods-JSON.release.xcconfig"; sourceTree = "<group>"; };
 		4EF419D92C8C5236CED32E4A /* Pods-JSON-JSONUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSON-JSONUITests.debug.xcconfig"; path = "Target Support Files/Pods-JSON-JSONUITests/Pods-JSON-JSONUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +99,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1979FA62241131BC0092FC8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1979FA64241131CF0092FC8B /* Application */,
+				E369416E240EB9360066BC2C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1979FA63241131C40092FC8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1979FA66241132190092FC8B /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1979FA64241131CF0092FC8B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E369416C240EB9360066BC2C /* SceneDelegate.swift */,
+				E369416A240EB9360066BC2C /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1979FA65241131DE0092FC8B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E3694178240EB9420066BC2C /* LaunchScreen.storyboard */,
+				E3694170240EB9360066BC2C /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1979FA68241133670092FC8B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1979FA69241133760092FC8B /* DataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		92733B7DA0F9BFE96975182D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,12 +191,11 @@
 		E3694169240EB9360066BC2C /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				E369416A240EB9360066BC2C /* AppDelegate.swift */,
-				E369416C240EB9360066BC2C /* SceneDelegate.swift */,
-				E369416E240EB9360066BC2C /* ViewController.swift */,
-				E3694170240EB9360066BC2C /* Main.storyboard */,
+				1979FA68241133670092FC8B /* Service */,
+				1979FA65241131DE0092FC8B /* Storyboard */,
+				1979FA63241131C40092FC8B /* Model */,
+				1979FA62241131BC0092FC8B /* Controller */,
 				E3694176240EB9410066BC2C /* Assets.xcassets */,
-				E3694178240EB9420066BC2C /* LaunchScreen.storyboard */,
 				E369417B240EB9420066BC2C /* Info.plist */,
 				E3694173240EB9360066BC2C /* JSON.xcdatamodeld */,
 			);
@@ -415,7 +461,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E369416F240EB9360066BC2C /* ViewController.swift in Sources */,
+				1979FA67241132190092FC8B /* Category.swift in Sources */,
 				E369416B240EB9360066BC2C /* AppDelegate.swift in Sources */,
+				1979FA6A241133760092FC8B /* DataService.swift in Sources */,
 				E369416D240EB9360066BC2C /* SceneDelegate.swift in Sources */,
 				E3694175240EB9360066BC2C /* JSON.xcdatamodeld in Sources */,
 			);
